@@ -1,64 +1,40 @@
-\# Proxmox VE Configuration
+# Proxmox VE Configuration
 
-
-
-\## Objective
+## Objective
 
 Document the initial configuration and management of Proxmox VE.
 
+## Configuration Areas
 
+### 1. Management Interface
 
-\## Configuration Areas
+- Access the Proxmox Web Interface.
+- Configure management network settings.
+- Verify connectivity.
 
+### 2. Network Configuration
 
+- Configure Linux bridges.
+- Prepare network connectivity for virtual machines.
+- Document VLAN-aware networking.
 
-\### 1. Management Interface
+### 3. Storage Configuration
 
-\- Access the Proxmox Web Interface.
+- Review available storage.
+- Understand local storage and ISO image storage.
+- Document virtual disk management.
 
-\- Configure management network settings.
+### 4. Virtual Machine Management
 
-\- Verify connectivity.
+- Create and configure virtual machines.
+- Allocate CPU, RAM, and disk resources.
+- Manage VM lifecycle.
 
-
-
-\### 2. Network Configuration
-
-\- Configure Linux bridges.
-
-\- Prepare network connectivity for virtual machines.
-
-\- Document VLAN-aware networking.
-
-
-
-\### 3. Storage Configuration
-
-\- Review available storage.
-
-\- Understand local storage and ISO image storage.
-
-\- Document virtual disk management.
-
-
-
-\### 4. Virtual Machine Management
-
-\- Create and configure virtual machines.
-
-\- Allocate CPU, RAM, and disk resources.
-
-\- Manage VM lifecycle.
-
-
-
-\## Screenshots
+## Screenshots
 
 Configuration screenshots will be added here.
 
-
-
-\## Verification
+## Verification
 
 Each configuration will be tested and documented before being considered complete.
 
