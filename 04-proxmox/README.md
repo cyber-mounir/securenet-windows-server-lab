@@ -19,20 +19,14 @@ This nested virtualization approach is used for educational purposes.
 
 ## 3. Proxmox VE Virtual Machine Resources
 
-Initial planned resources:
+Initial Planned Resources
 
 | Resource | Allocation |
-
 |---|---|
-
 | CPU | 4 vCPUs |
-
 | Memory | 10–12 GB RAM |
-
 | Storage | 100 GB virtual disk |
-
 | Network | VMware NAT |
-
 | Virtualization | Nested virtualization enabled |
 
 Actual allocations may be adjusted according to the host computer's available resources.
