@@ -124,17 +124,11 @@ Resources:
 ## 4. Virtual Infrastructure Summary
 
 | System | Main Role | Network |
-
 |---|---|---|
-
 | FW1 | Firewall and routing | WAN and VLAN trunk |
-
-| DC1 | AD DS, DNS and DHCP | VLAN 10 |
-
+| DC1 | Active Directory Domain Services (AD DS), DNS and DHCP | VLAN 10 |
 | FS1 | File Server | VLAN 10 |
-
 | PC-RH | HR workstation | VLAN 20 |
-
 | PC-COM | Commercial workstation | VLAN 30 |
 
 ## 5. Resource Allocation
