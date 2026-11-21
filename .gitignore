@@ -1,0 +1,14 @@
+# Windows temporary files
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.log
+
+# Editor folders
+.vscode/
+
+# Sensitive local files
+.env
+*.secret
