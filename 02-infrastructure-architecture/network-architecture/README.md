@@ -35,49 +35,39 @@ The lab uses the following network design:
 ## 4. VLAN Design
 
 | VLAN ID | Name | Network | Gateway | Purpose |
-
 |---|---|---|---|---|
-
 | 10 | Servers | 10.10.10.0/24 | 10.10.10.1 | Servers and infrastructure |
-
 | 20 | HR | 10.10.20.0/24 | 10.10.20.1 | HR workstations |
-
 | 30 | Commercial | 10.10.30.0/24 | 10.10.30.1 | Commercial workstations |
 
-VLAN segmentation separates the departments and server infrastructure into different logical networks.
+VLAN segmentation separates the departments and server infrastructure into different logical networks. This improves network organization, supports access control, and helps isolate traffic between departments.
 
 ## 5. IP Addressing Plan
 
 ### 5.1 Servers VLAN – VLAN 10
 
 | Device | IP Address | Role |
-
 |---|---|---|
-
 | OPNsense VLAN 10 | 10.10.10.1/24 | Default gateway |
-
 | DC1 | 10.10.10.10/24 | AD DS, DNS, DHCP |
-
 | FS1 | 10.10.10.20/24 | File Server |
+
+All devices in VLAN 10 use the 10.10.10.0/24 network. The OPNsense VLAN 10 interface acts as the default gateway for the server subnet.
 
 ### 5.2 HR VLAN – VLAN 20
 
 | Device | IP Address |
-
 |---|---|
-
 | OPNsense VLAN 20 | 10.10.20.1/24 |
-
 | PC-RH | DHCP: 10.10.20.50–10.10.20.200 |
+
+The HR workstation (PC-RH) receives its IP configuration dynamically from the Windows Server DHCP service through DHCP Relay configured on OPNsense.
 
 ### 5.3 Commercial VLAN – VLAN 30
 
 | Device | IP Address |
-
 |---|---|
-
 | OPNsense VLAN 30 | 10.10.30.1/24 |
-
 | PC-COM | DHCP: 10.10.30.50–10.10.30.200 |
 
 ## 6. Network Services
