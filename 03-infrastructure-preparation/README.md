@@ -52,8 +52,11 @@ Nested virtualization allows a hypervisor to run inside another virtualized envi
 In this project:
 
 1\. Windows runs on the physical computer.
+
 2\. VMware Workstation runs on Windows.
+
 3\. Proxmox VE runs inside VMware Workstation.
+
 4\. Proxmox hosts the lab's virtual machines.
 
 The CPU virtualization extensions must be available to the nested Proxmox environment.
@@ -65,8 +68,11 @@ The VMware virtual network provides connectivity to the Proxmox VE virtual machi
 The initial design uses:
 
 - VMware NAT for Proxmox WAN and management-side connectivity.
+  
 - Proxmox vmbr0 for the WAN/management side.
+  
 - Proxmox vmbr1 for internal VLAN networks.
+  
 - OPNsense to manage internal routing and firewall policies.
 
 ## 6. Preparation Checklist
