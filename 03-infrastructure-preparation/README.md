@@ -40,7 +40,7 @@ Planned VM resources:
 - 4 virtual CPUs.
 - 10–12 GB RAM.
 - 100 GB virtual disk.
-- VMware NAT network adapter.
+- VMware Bridge network adapter.
 - Nested virtualization enabled.
 
 These values are initial allocations and may be adjusted according to host resources.
